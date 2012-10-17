@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BusinessMasterPage.Master.cs" Inherits="North22ndStreet.Web.Merchants.BusinessMasterPage" %>
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+
+<%@ Register src="../MainMenu.ascx" tagname="MainMenu" tagprefix="uc1" %>
+<link href="BusinessStyle.css" rel="stylesheet" type="text/css" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+        </telerik:RadScriptManager>
+       
+    <div class="Outer">
+    
+    <div class="Center">
+        <table id="MainTable" width="820px">
+            <tr>
+                <td >
+                    <asp:ContentPlaceHolder ID="TopAdvertisement" runat="server">
+                        
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <img src="../Images/Headers/Header_Sunset.jpg" alt="" />
+                </td>  
+            </tr>
+            <tr>
+                <td align="center" style="width:100%;">                    
+                    <uc1:MainMenu ID="MainMenu1" runat="server" />                    
+                </td>
+            </tr>
+        <tr>
+            <td valign="top">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>        
+        </tr>
+        </table>    
+    </div>
+            
+    </div>
+    </form>
+</body>
+</html>

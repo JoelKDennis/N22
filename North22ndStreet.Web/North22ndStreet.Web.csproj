@@ -1,0 +1,646 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5877D847-4C17-4F01-AE7C-26570080C6B2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>North22ndStreet.Web</RootNamespace>
+    <AssemblyName>North22ndStreet.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="Telerik.Web.UI, Version=2008.2.1001.35, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Telerik\RadControls for ASPNET AJAX Q2 2008\Bin35\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestEncryption.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2009Special.aspx.cs">
+      <DependentUpon>2009Special.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2009Special.aspx.designer.cs">
+      <DependentUpon>2009Special.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AWF2010Festival.aspx.cs">
+      <DependentUpon>AWF2010Festival.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AWF2010Festival.aspx.designer.cs">
+      <DependentUpon>AWF2010Festival.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventMap2010.aspx.cs">
+      <DependentUpon>EventMap2010.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventMap2010.aspx.designer.cs">
+      <DependentUpon>EventMap2010.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAMDAY2010.aspx.cs">
+      <DependentUpon>FAMDAY2010.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="404Error.aspx.cs">
+      <DependentUpon>404Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="404Error.aspx.designer.cs">
+      <DependentUpon>404Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AW\HistoryDefault.Master.cs">
+      <DependentUpon>HistoryDefault.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AW\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AW\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AW\History.aspx.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AW\History.aspx.designer.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AW\HistoryDefault.Master.designer.cs">
+      <DependentUpon>HistoryDefault.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AW\News_AWFYouth.aspx.cs">
+      <DependentUpon>News_AWFYouth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AW\News_AWFYouth.aspx.designer.cs">
+      <DependentUpon>News_AWFYouth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AW\News_AWMainStreetReport2008.aspx.cs">
+      <DependentUpon>News_AWMainStreetReport2008.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AW\News_AWMainStreetReport2008.aspx.designer.cs">
+      <DependentUpon>News_AWMainStreetReport2008.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AW\News_ElmStreet.aspx.cs">
+      <DependentUpon>News_ElmStreet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AW\News_ElmStreet.aspx.designer.cs">
+      <DependentUpon>News_ElmStreet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AW\News_Wachovia.aspx.cs">
+      <DependentUpon>News_Wachovia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AW\News_Wachovia.aspx.designer.cs">
+      <DependentUpon>News_Wachovia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Directions.aspx.cs">
+      <DependentUpon>Directions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Directions.aspx.designer.cs">
+      <DependentUpon>Directions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events.aspx.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Events.aspx.designer.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAMDAY2010.aspx.designer.cs">
+      <DependentUpon>FAMDAY2010.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="HairSalons.aspx.cs">
+      <DependentUpon>HairSalons.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HairSalons.aspx.designer.cs">
+      <DependentUpon>HairSalons.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AW\News.Master.cs">
+      <DependentUpon>News.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AW\News.Master.designer.cs">
+      <DependentUpon>News.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.ascx.cs">
+      <DependentUpon>MainMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainMenu.ascx.designer.cs">
+      <DependentUpon>MainMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Merchants\BusinessMasterPage.Master.cs">
+      <DependentUpon>BusinessMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Merchants\BusinessMasterPage.Master.designer.cs">
+      <DependentUpon>BusinessMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Merchants\CategoryList.ascx.cs">
+      <DependentUpon>CategoryList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Merchants\CategoryList.ascx.designer.cs">
+      <DependentUpon>CategoryList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MerchantSearch.aspx.cs">
+      <DependentUpon>MerchantSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MerchantSearch.aspx.designer.cs">
+      <DependentUpon>MerchantSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Merchants\Daves\DavesUC.ascx.cs">
+      <DependentUpon>DavesUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Merchants\Daves\DavesUC.ascx.designer.cs">
+      <DependentUpon>DavesUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Merchants\EricHoltOptical\HoltOpticalUC.ascx.cs">
+      <DependentUpon>HoltOpticalUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Merchants\EricHoltOptical\HoltOpticalUC.ascx.designer.cs">
+      <DependentUpon>HoltOpticalUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Merchants\FemaleFashions\FemaleFashionsCoupon.aspx.cs">
+      <DependentUpon>FemaleFashionsCoupon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Merchants\FemaleFashions\FemaleFashionsCoupon.aspx.designer.cs">
+      <DependentUpon>FemaleFashionsCoupon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Merchants\FemaleFashions\FemaleFashionsUC.ascx.cs">
+      <DependentUpon>FemaleFashionsUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Merchants\FemaleFashions\FemaleFashionsUC.ascx.designer.cs">
+      <DependentUpon>FemaleFashionsUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Merchants\GCGE\GCGEUC.ascx.cs">
+      <DependentUpon>GCGEUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Merchants\GCGE\GCGEUC.ascx.designer.cs">
+      <DependentUpon>GCGEUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Merchants\SpecialsComingSoon.ascx.cs">
+      <DependentUpon>SpecialsComingSoon.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Merchants\SpecialsComingSoon.ascx.designer.cs">
+      <DependentUpon>SpecialsComingSoon.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Merchants\StopNSave\StopnSaveUC.ascx.cs">
+      <DependentUpon>StopnSaveUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Merchants\StopNSave\StopnSaveUC.ascx.designer.cs">
+      <DependentUpon>StopnSaveUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Merchants\Tastykake\Tasty.ascx.cs">
+      <DependentUpon>Tasty.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Merchants\Tastykake\Tasty.ascx.designer.cs">
+      <DependentUpon>Tasty.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Merchants\Tommys\Tommys.ascx.cs">
+      <DependentUpon>Tommys.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Merchants\Tommys\Tommys.ascx.designer.cs">
+      <DependentUpon>Tommys.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Merchants\Tommys\TommysCoupon.aspx.cs">
+      <DependentUpon>TommysCoupon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Merchants\Tommys\TommysCoupon.aspx.designer.cs">
+      <DependentUpon>TommysCoupon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RealEstate.aspx.cs">
+      <DependentUpon>RealEstate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RealEstate.aspx.designer.cs">
+      <DependentUpon>RealEstate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestEncryption.aspx.cs">
+      <DependentUpon>TestEncryption.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestEncryption.aspx.designer.cs">
+      <DependentUpon>TestEncryption.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BusinessControl.ascx.cs">
+      <DependentUpon>BusinessControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\BusinessControl.ascx.designer.cs">
+      <DependentUpon>BusinessControl.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\North22ndStreet.Business\North22ndStreet.Business.csproj">
+      <Project>{36CC971C-B07E-45CB-B4D7-2DF6FDDCFCF6}</Project>
+      <Name>North22ndStreet.Business</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Flash\N22St.swf" />
+    <Content Include="Images\CollageHair.jpg" />
+    <Content Include="Images\CollageWeb.jpg" />
+    <Content Include="Images\ComingSoonHair.gif" />
+    <Content Include="Images\Food.jpg" />
+    <Content Include="Images\HairDid.jpg" />
+    <Content Include="Images\Header.jpg" />
+    <Content Include="Images\RealEstate.jpg" />
+    <Content Include="Styles\CSSImages\WebBG.jpg" />
+    <Content Include="Images\WebLogo.gif" />
+    <Content Include="Main.Master" />
+    <Content Include="HairSalons.aspx" />
+    <Content Include="Styles\Styles.css" />
+    <Content Include="UserControls\BusinessControl.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AW\AW.css" />
+    <Content Include="AW\default.aspx" />
+    <Content Include="AW\Images\awf-logo-centered.gif" />
+    <Content Include="AW\Images\AWHeader.gif" />
+    <Content Include="AW\Images\AWHeaderAD.gif" />
+    <Content Include="AW\Images\CheckPresentation.jpg" />
+    <Content Include="AW\Images\Panati.jpg" />
+    <Content Include="AW\Images\Wachovia Grant Attendance.JPG" />
+    <Content Include="AW\News.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AW\History.aspx" />
+    <Content Include="AW\Images\22Clearfield.jpg" />
+    <Content Include="AW\Images\28Cambria.jpg" />
+    <Content Include="AW\Images\AtwaterPlant.jpg" />
+    <Content Include="AW\Images\BackCover.jpg" />
+    <Content Include="AW\Images\BanquetHallSmall.jpg" />
+    <Content Include="AW\Images\Budd Railworks Picture.jpg" />
+    <Content Include="AW\Images\Budd.jpg" />
+    <Content Include="AW\Images\CornerStore.jpg" />
+    <Content Include="AW\Images\Corridor.jpg" />
+    <Content Include="AW\Images\History.jpg" />
+    <Content Include="AW\Images\Hope.jpg" />
+    <Content Include="AW\Images\MixedUse.jpg" />
+    <Content Include="AW\Images\RehabStore.jpg" />
+    <Content Include="AW\Images\Shibe.jpg" />
+    <Content Include="AW\Images\TastyKakeBldg.jpg" />
+    <Content Include="AW\Images\Water Meter Shop 29th and Clearfield 1953.jpg" />
+    <Content Include="Images\Headers\Header_Sunset.jpg" />
+    <Content Include="Images\Headers\TopHeaderBrick.jpg" />
+    <Content Include="MainMenu.ascx" />
+    <Content Include="Merchants\BusinessMasterPage.Master" />
+    <Content Include="Merchants\BusinessStyle.css" />
+    <Content Include="MerchantSearch.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="2009Special.aspx" />
+    <Content Include="AW\HistoryDefault.Master" />
+    <Content Include="AW\Images\CollegePrepOnSteps_Cropped.jpg" />
+    <Content Include="AW\Images\community day 2.jpg" />
+    <Content Include="AW\Images\community day 9.jpg" />
+    <Content Include="AW\Images\GCGE.gif" />
+    <Content Include="AW\Images\HistoryHeader.jpg" />
+    <Content Include="AW\Images\HoltOptical_remodel.jpg" />
+    <Content Include="AW\Images\NewsHeader.jpg" />
+    <Content Include="AW\Images\StopnSave.gif" />
+    <Content Include="AW\News_AWFYouth.aspx" />
+    <Content Include="AW\News_AWMainStreetReport2008.aspx" />
+    <Content Include="AW\News_ElmStreet.aspx" />
+    <Content Include="AW\News_Wachovia.aspx" />
+    <Content Include="Directions.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Images\22ndStreetLogoNEW.jpg" />
+    <Content Include="Images\CSS\divBG590x25.gif" />
+    <Content Include="Images\CSS\divBG590x50.gif" />
+    <Content Include="Images\Shopping2009.jpg" />
+    <Content Include="Images\Shopping2009_Gift.jpg" />
+    <Content Include="Images\Shopping2009_Gift_v2.jpg" />
+    <Content Include="Merchants\BackgroundLinear.jpg" />
+    <Content Include="Merchants\CategoryList.ascx" />
+    <Content Include="Merchants\Daves\cow2_Small.gif" />
+    <Content Include="Merchants\Daves\DavesUC.ascx" />
+    <Content Include="Merchants\Daves\NoPork.jpg" />
+    <Content Include="Merchants\Daves\pig-thumb.jpg" />
+    <Content Include="Merchants\Daves\Sandwich.jpg" />
+    <Content Include="Merchants\Daves\TurkeyCartoon.jpg" />
+    <Content Include="Merchants\FemaleFashions\116_1679.JPG" />
+    <Content Include="Merchants\FemaleFashions\116_1684.JPG" />
+    <Content Include="Merchants\FemaleFashions\116_1685.JPG" />
+    <Content Include="Merchants\FemaleFashions\116_1686.JPG" />
+    <Content Include="Merchants\FemaleFashions\116_1687.JPG" />
+    <Content Include="Merchants\FemaleFashions\116_1688.JPG" />
+    <Content Include="Merchants\FemaleFashions\116_1689.JPG" />
+    <Content Include="Merchants\FemaleFashions\116_1692.JPG" />
+    <Content Include="Merchants\FemaleFashions\116_1695.JPG" />
+    <Content Include="Merchants\FemaleFashions\116_1696.JPG" />
+    <Content Include="Merchants\FemaleFashions\116_1699.JPG" />
+    <Content Include="Merchants\FemaleFashions\116_1700.JPG" />
+    <Content Include="Merchants\FemaleFashions\116_1702.JPG" />
+    <Content Include="Merchants\FemaleFashions\116_1706.JPG" />
+    <Content Include="Merchants\FemaleFashions\116_1714.JPG" />
+    <Content Include="Merchants\FemaleFashions\116_1715.JPG" />
+    <Content Include="Merchants\FemaleFashions\116_1718.JPG" />
+    <Content Include="Merchants\FemaleFashions\116_1729.JPG" />
+    <Content Include="Merchants\FemaleFashions\116_1734.JPG" />
+    <Content Include="Merchants\FemaleFashions\CouponFemaleFashions.gif" />
+    <Content Include="Merchants\FemaleFashions\CreditCards.jpg" />
+    <Content Include="Merchants\FemaleFashions\FemaleFashionsCoupon.aspx" />
+    <Content Include="Merchants\FemaleFashions\FemaleFashionsUC.ascx" />
+    <Content Include="Merchants\GCGE\Couple.jpg" />
+    <Content Include="Merchants\GCGE\GCGE.png" />
+    <Content Include="Merchants\GCGE\GCGEUC.ascx" />
+    <Content Include="Merchants\GCGE\GCGE_small.png" />
+    <Content Include="Merchants\GCGE\Ship1.jpg" />
+    <Content Include="Merchants\GCGE\Ship2.jpg" />
+    <Content Include="Merchants\Images\ComingSoon.jpg" />
+    <Content Include="Merchants\Images\ComingSoon_sm.jpg" />
+    <Content Include="Merchants\Images\GCGE.jpg" />
+    <Content Include="Merchants\Images\MapMarked.jpg" />
+    <Content Include="Merchants\SpecialsComingSoon.ascx" />
+    <Content Include="Merchants\Tastykake\AllegheyWestLogo.jpg" />
+    <Content Include="Merchants\Tastykake\Tasty.ascx" />
+    <Content Include="Merchants\Tastykake\tasty1.jpg" />
+    <Content Include="Merchants\Tastykake\tasty_cupcakes.jpg" />
+    <Content Include="Merchants\Tastykake\tasty_kandyKakes.jpg" />
+    <Content Include="Merchants\Tastykake\tasty_koffekakes.jpg" />
+    <Content Include="Merchants\Tastykake\tasty_logo.jpg" />
+    <Content Include="Merchants\Tastykake\tasty_pies.jpg" />
+    <Content Include="Merchants\Tastykake\tasty_sensables.jpg" />
+    <Content Include="Merchants\Tastykake\tasty_snackbars.jpg" />
+    <Content Include="Merchants\Tommys\Hats.jpg" />
+    <Content Include="Merchants\Tommys\Hats2.jpg" />
+    <Content Include="Merchants\Tommys\Jacket.jpg" />
+    <Content Include="Merchants\Tommys\Pants.jpg" />
+    <Content Include="Merchants\Tommys\Shoes.jpg" />
+    <Content Include="Merchants\Tommys\Socks.jpg" />
+    <Content Include="Merchants\Tommys\Suits.jpg" />
+    <Content Include="Merchants\Tommys\Suits2.jpg" />
+    <Content Include="Merchants\Tommys\Suits3.jpg" />
+    <Content Include="Merchants\Tommys\ties.jpg" />
+    <Content Include="Merchants\Tommys\Tommys.ascx" />
+    <Content Include="Merchants\Tommys\TommysCoupon.aspx" />
+    <Content Include="Merchants\Tommys\TommysCoupon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AWF2010Festival.aspx" />
+    <Content Include="EventMap2010.aspx" />
+    <Content Include="FAMDAY2010.aspx" />
+    <Content Include="404Error.aspx" />
+    <Content Include="AW\CSSImages\AWNewsPrintHeader.jpg" />
+    <Content Include="AW\CSSImages\Footer.gif" />
+    <Content Include="Error.aspx" />
+    <Content Include="Events.aspx" />
+    <Content Include="FeMaleFashions\default.htm" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\AfterHolidayShopping2009_Gift.jpg" />
+    <Content Include="Images\AW_2010_550.jpg" />
+    <Content Include="Images\Banner\Banner_Daves.gif" />
+    <Content Include="Images\Banner\Banner_FeMaleFashions.gif" />
+    <Content Include="Images\Banner\Banner_GCGE.gif" />
+    <Content Include="Images\Banner\Banner_StopnSave.gif" />
+    <Content Include="Images\Banner\Banner_Tastykake.gif" />
+    <Content Include="Images\Banner\Banner_Tommys.gif" />
+    <Content Include="Images\EventMap.jpg" />
+    <Content Include="Images\FAMwebllogo.jpg" />
+    <Content Include="Images\FrontPage_2011_08.jpg" />
+    <Content Include="Images\WayFindingMap.jpg" />
+    <Content Include="Merchants\CategoryImages\ACC.jpg" />
+    <Content Include="Merchants\CategoryImages\BEER.jpg" />
+    <Content Include="Merchants\CategoryImages\BS.jpg" />
+    <Content Include="Merchants\CategoryImages\BR.jpg" />
+    <Content Include="Merchants\CategoryImages\BHS.jpg" />
+    <Content Include="Merchants\CategoryImages\BK.jpg" />
+    <Content Include="Merchants\CategoryImages\DC.jpg" />
+    <Content Include="Merchants\CategoryImages\DS.jpg" />
+    <Content Include="Merchants\CategoryImages\FURN.jpg" />
+    <Content Include="Merchants\CategoryImages\GAS.jpg" />
+    <Content Include="Merchants\CategoryImages\HAIR.jpg" />
+    <Content Include="Merchants\CategoryImages\HRDW.jpg" />
+    <Content Include="Merchants\CategoryImages\CCLTH.jpg" />
+    <Content Include="Merchants\CategoryImages\ISLAM.jpg" />
+    <Content Include="Merchants\CategoryImages\JWLRY.jpg" />
+    <Content Include="Merchants\CategoryImages\LND.jpg" />
+    <Content Include="Merchants\CategoryImages\ELC.jpg" />
+    <Content Include="Merchants\CategoryImages\EYE.jpg" />
+    <Content Include="Merchants\CategoryImages\FIN.jpg" />
+    <Content Include="Merchants\CategoryImages\FLW.jpg" />
+    <Content Include="Merchants\CategoryImages\FOOD.jpg" />
+    <Content Include="Merchants\CategoryImages\FNRL.jpg" />
+    <Content Include="Merchants\CategoryImages\LNGR.jpg" />
+    <Content Include="Merchants\CategoryImages\MEDCL.jpg" />
+    <Content Include="Merchants\CategoryImages\MENS.jpg" />
+    <Content Include="Merchants\CategoryImages\NAILS.jpg" />
+    <Content Include="Merchants\CategoryImages\OUT.jpg" />
+    <Content Include="Merchants\CategoryImages\PHONE.jpg" />
+    <Content Include="Merchants\CategoryImages\PHRMC.jpg" />
+    <Content Include="Merchants\CategoryImages\REC.jpg" />
+    <Content Include="Merchants\CategoryImages\REPR.jpg" />
+    <Content Include="Merchants\CategoryImages\RSTRT.jpg" />
+    <Content Include="Merchants\CategoryImages\SHOES.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\ACC_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\BEER_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\BHS_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\BK_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\BR_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\BS_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\CCLTH_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\DC_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\DS_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\ELC_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\EYE_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\FIN_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\FLW_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\FNRL_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\FOOD_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\FURN_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\GAS_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\HAIR_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\HRDW_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\ISLAM_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\JWLRY_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\LND_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\LNGR_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\MEDCL_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\MENS_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\NAILS_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\OUT_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\PHONE_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\PHRMC_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\REC_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\REPR_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\RSTRT_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\SHOES_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\SPORT_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\SVCS_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\TRAVL_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\UNI_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\VIDEO_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\WMNS_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\WRICE_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SideBar\WRSHP_s.jpg" />
+    <Content Include="Merchants\CategoryImages\SPORT.jpg" />
+    <Content Include="Merchants\CategoryImages\SVCS.jpg" />
+    <Content Include="Merchants\CategoryImages\TRAVL.jpg" />
+    <Content Include="Merchants\CategoryImages\UNI.jpg" />
+    <Content Include="Merchants\CategoryImages\VIDEO.jpg" />
+    <Content Include="Merchants\CategoryImages\WMNS.jpg" />
+    <Content Include="Merchants\CategoryImages\WRICE.jpg" />
+    <Content Include="Merchants\CategoryImages\WRSHP.jpg" />
+    <Content Include="Merchants\EricHoltOptical\Eyeglasses_578.jpg" />
+    <Content Include="Merchants\EricHoltOptical\HoltOpticalUC.ascx" />
+    <Content Include="Merchants\StopNSave\StopnSaveUC.ascx" />
+    <Content Include="RealEstate.aspx" />
+    <Content Include="Styles\AdminStyles.css" />
+    <Content Include="Styles\CSSImages\AdminFooter.gif" />
+    <Content Include="Styles\CSSImages\AdminHeader.gif" />
+    <Content Include="Styles\CSSImages\butttonMaroon.gif" />
+    <Content Include="Styles\CSSImages\Footer.gif" />
+    <Content Include="Styles\CSSImages\Header.gif" />
+    <Content Include="AdminMaster.Master" />
+    <Content Include="Styles\CSSImages\UpperCenterMaroon.gif" />
+    <Content Include="Styles\CSSImages\UpperLeftMaroon.gif" />
+    <Content Include="Styles\CSSImages\UpperRightMaroon.gif" />
+    <None Include="CommunityDay2009\2009.pdf" />
+    <Content Include="Downloads\DiscountCard_2010.pdf" />
+    <None Include="Images\DiscountCard.pdf" />
+    <None Include="Merchants\FemaleFashions\DiscountCard_Spring2010.pdf" />
+    <Content Include="Merchants\GCGE\pdfs\Brochure_2010.pdf" />
+    <None Include="Merchants\GCGE\pdfs\CarnivalDestiny_GCGE.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="22Events\" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53853</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

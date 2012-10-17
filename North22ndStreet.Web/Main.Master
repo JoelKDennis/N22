@@ -1,0 +1,129 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="North22ndStreet.Web.Main" %>
+
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+
+<%@ Register src="MainMenu.ascx" tagname="MainMenu" tagprefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<link href="Styles/Styles.css" rel="stylesheet" type="text/css" />
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>North 22nd Street, Philadelphia | Shopping | News | Directions</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+        </telerik:RadScriptManager>
+   <telerik:RadAjaxPanel ID="AjaxPanelMaster" runat="server">
+    <div class="Outer">
+    <div class="Header">
+        <table width="100%">
+            <tr>
+                <td colspan="3" style="height:50px; cursor:pointer;" onclick="window.location.href='Default.aspx'"></td>
+                <td colspan="4" style="height:50px;">                    
+                    <asp:ContentPlaceHolder ID="TopAdvertisement" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr id="Banner Merchants">
+                <td align="center">
+                    <asp:HyperLink ID="lnkAd1" runat="server">
+                        <asp:Image ID="imgAd1" runat="server" AlternateText="Dave's Fresh Meats" ImageUrl="~/Images/Banner/Banner_Daves.gif" />                                   
+                    </asp:HyperLink>                                
+                </td>
+                <td align="center">
+                    <asp:HyperLink ID="lnkAd2" runat="server">
+                        <asp:Image ID="imgAd2" runat="server" AlternateText="Fe-Male Fashions" ImageUrl="~/Images/Banner/Banner_FeMaleFashions.gif" />
+                    </asp:HyperLink>
+                </td>
+                <td align="center">
+                    <asp:HyperLink ID="lnkAd3" runat="server">
+                        <asp:Image ID="imgAd3" runat="server" AlternateText="Group Cruises & Great Escapes" ImageUrl="~/Images/Banner/Banner_GCGE.gif" />
+                    </asp:HyperLink>
+                </td>
+                <td align="center">
+                    <asp:HyperLink ID="lnkAd4" runat="server">
+                        <asp:Image ID="imgAd4" runat="server" AlternateText="Stop & Save Check Cash" ImageUrl="~/Images/Banner/Banner_StopnSave.gif" />
+                    </asp:HyperLink>
+                </td>
+                <td align="center">
+                    <asp:HyperLink ID="lnkAd5" runat="server">
+                        <asp:Image ID="imgAd5" runat="server" AlternateText="Tastykake Thrift Outlet Store" ImageUrl="~/Images/Banner/Banner_Tastykake.gif" />
+                    </asp:HyperLink>                                
+                </td>
+                <td align="center">
+                    <asp:HyperLink ID="lnkAd6" runat="server">
+                        <asp:Image ID="imgAd6" runat="server" AlternateText="Tommy's Men Shop" ImageUrl="~/Images/Banner/Banner_Tommys.gif" />
+                    </asp:HyperLink>
+                </td>
+                <td align="center">
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="OuterCenter">
+    <div class="Center">
+        <table id="MainTable" width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+                <td colspan="3" align="center" >                    
+                    <uc1:MainMenu ID="MainMenu1" runat="server" />                    
+                </td>
+            </tr>
+        <tr>
+            <td style="width:80px; padding:0px 1px 0px 1px; background-color:#F4EDE1; border-right:Solid 1px #C40000; border-bottom:Solid 1px #C40000;" align="center" valign="top">
+            <!--Category Pictures Go here!-->
+            <br />
+            <telerik:RadRotator ID="rotatorCategory" runat="server" Height="640px" Width="78px" WrapFrames="true" Skin="Vista"
+            ItemHeight="100px" ItemWidth="75px" RotatorType="Buttons" ScrollDuration="500" FrameDuration="200" DataSourceID="categoryDataSource">
+                <ItemTemplate>
+                    <asp:HyperLink ID="linkCategory" runat="server" NavigateUrl='<%# String.Format("~/2009Special.aspx?value={0}&level=0", DataBinder.Eval(Container.DataItem, "Abbreviation")) %>' >
+                        <asp:Image ID="imgCategory" runat="server" ImageAlign="Middle" ImageUrl='<%#String.Format("Merchants/CategoryImages/SideBar/{0}.jpg", DataBinder.Eval(Container.DataItem, "PictureNameSmall")) %>' />
+                    </asp:HyperLink>                    
+                </ItemTemplate>
+            </telerik:RadRotator>
+            <asp:ObjectDataSource ID="categoryDataSource" runat="server" SelectMethod="GetCategories"
+            TypeName="North22ndStreet.Business.Category"></asp:ObjectDataSource>
+             <br />
+            </td>
+            <td valign="top" style="width: 590px">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>        
+            <td style="width: 220px; text-align:right; vertical-align:top; background-color:#F4EDE1; border-left:Solid 1px #C40000; border-bottom:Solid 1px #C40000;">            
+                <div class="semiTrans">
+                <span style="font-size:18px; font-weight:bold; font-family:Tahoma; color:#C40000;">
+                    Merchant Directory
+                </span>
+                <br />
+                    <telerik:RadTreeView ID="rtvBusinessList" runat="server" DataFieldID="ID" DataFieldParentID="ParentID"
+                         DataTextField="TextValue" DataValueField="ID" Width="99%" OnNodeClick="rtvBusinessList_NodeClick" 
+                        Skin="Sunset">
+                        <CollapseAnimation Type="OutQuint" Duration="100"></CollapseAnimation>
+                        <ExpandAnimation Duration="100"></ExpandAnimation>
+                    </telerik:RadTreeView>
+                    <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="TreeValues"
+                        TypeName="North22ndStreet.Business.StreetBusiness"></asp:ObjectDataSource>
+                </div>
+            </td>
+        </tr>
+        </table>    
+    </div>
+   </div>         
+   <div class="footer"></div>
+    </div>
+    </telerik:RadAjaxPanel>
+    
+    </form>
+</body>
+</html>

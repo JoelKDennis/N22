@@ -1,0 +1,99 @@
+﻿body
+{
+	background-color:#D4D4D4;
+	text-align:center;
+	position:relative;
+	width: 100%;
+	font-family:Verdana;
+}
+div.BodyCenter
+{
+	width:900px;
+	text-align:center;	
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+div.Header
+{
+	width:900px;
+	background-image:url(Images/AdminHeader.gif);
+	background-repeat:no-repeat;
+	height:115px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+div.Content
+{
+	background-color:#FFF;
+	width:890px;	
+	text-align:center;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+div.Footer
+{
+	width:900px;
+	background-image:url('Images/AdminFooter.gif');
+	background-repeat:no-repeat;
+	height:115px;
+	position:relative;	
+	margin-left:auto;
+	margin-right:auto;
+	font-size:10px;
+}
+div.OuterEntryBox
+{
+	width:400px;
+	height:250px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+div.EntryBox
+{
+	height:250px;
+	border: Solid 2px #C40000;
+	font-family:Verdana;
+	color: #C40000;
+	font-size:12px;
+	vertical-align:top;
+	margin-left:1px;
+	margin-right:1px;
+	position:relative;
+}
+.buttonMaroon
+{
+	background-color:#C40000;
+	width: 100px;
+	height: 30px;
+	color:#FFF;
+	font-weight:bold;
+	vertical-align:middle;
+}
+.UpperLeftMaroon
+{
+	background-image:url('Images/UpperLeftMaroon.gif');
+	background-repeat:no-repeat;
+	height:32px;
+	width:11px;
+}
+.UpperRightMaroon
+{
+	background-image:url('Images/UpperRightMaroon.gif');
+	background-repeat:no-repeat;
+	height:32px;
+	width:11px;
+}
+.UpperCenterMaroon
+{
+	background-image:url('Images/UpperCenterMaroon.gif');
+	background-repeat:repeat-x;
+	height:32px;
+	font-family:Verdana;
+	color: #FFF;
+	font-size:12px;
+	font-weight:bold;
+}

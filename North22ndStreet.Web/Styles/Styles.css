@@ -1,0 +1,181 @@
+﻿body
+{
+	background-color:#FFFFFF;	
+}
+img
+{  
+	border-style: none;
+}
+div.Header
+{
+	background-image:url('CSSImages/Header.gif');
+	background-repeat:no-repeat; 
+	width:900px;
+	height:115px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+div.footer
+{
+	background-image:url('CSSImages/Footer.gif');
+	background-repeat:no-repeat; 
+	width:900px;
+	height:115px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+div.Outer
+{
+	background-color:#FFFFFF;
+	/*background-image: url('CSSImages/WebBG.jpg');*/
+	background-repeat:no-repeat; 
+	background-position:center top;
+	text-align:center;
+	width: 100%;
+}
+div.OuterCenter
+{
+	background-color:Transparent;
+	width:900px;
+	text-align:center;
+	position:relative;	
+	margin-left: auto;
+	margin-right: auto;
+}
+div.Center
+{
+	margin-left:5px;
+	margin-right:5px;
+	border-left:Solid 2px #B9321D;
+	border-right:Solid 2px #B9321D;
+}
+div.semiTrans
+{
+	text-align:left;
+	border: Solid 1px #C40000;
+	padding: 2px 2px 2px 2px;
+	background-color:#FFFFFF;
+	/*opacity:0.65;
+	filter:alpha(opacity=65);
+	zoom:1;*/
+}
+
+div.TransRedWhite
+{
+	width:95%;
+	text-align:center;
+	margin: 6px 6px 6px 6px;
+	background-color:#FFFFFF;
+	color:#CC0000;
+	font-family:Verdana;
+	font-size: 12px;
+	line-height:16px;
+	/*opacity:0.80;
+	filter:alpha(opacity=80);
+	zoom:1;*/
+}
+div.Rotator
+{
+	width:200px;
+	height:200px;
+	border:Solid 2px #CC0000;
+}
+.Home
+{
+	width:100%;
+	text-align: left;
+	background-color:Transparent;
+	color:#CC0000;
+	font-family:Verdana;
+	font-size: 11px;
+	opacity:0.90;
+	filter:alpha(opacity=90);
+	zoom:1;
+}
+div.Hair
+{
+	background-image: url(../Images/CollageHair.jpg); 
+	height:800;
+}
+div.bg590x25
+{
+	width:588;
+	height:25;
+	background-image: url(../Images/CSS/divBG590x25.gif);
+	background-repeat:no-repeat;
+}
+div.bg590x50
+{
+	width:585;
+	height:50;
+	background-image: url(../Images/CSS/divBG590x50.gif);
+	background-repeat:no-repeat;
+}
+div.spacer
+{
+	font-size:0;height:10px;
+}
+.Header20
+{
+	font-size:20px;
+	font-weight:bold;
+	text-align: center;
+}
+.Header16
+{
+	font-size:16px;
+	font-weight:bold;
+	text-align: center;
+	color:#CC0000;
+}
+.Header13
+{
+	font-size:13px;
+	font-weight:bold;
+	color:#CC0000;
+}
+.gold
+{
+	color:#BAA25A;
+}
+.maroon
+{
+	color:#C40000;
+}
+.white
+{
+	color:#FFF;
+}
+.MerchantLabel1
+{
+	font-family:Verdana;
+	font-size:18px;
+	font-weight:bold;
+}
+.MerchantLabel2
+{
+	font-family:Verdana;
+	font-size:14px;
+	font-weight:bold;
+}
+.MerchantLabel3
+{
+	font-family:Verdana;
+	font-size:12px;
+	font-weight:bold;
+}
+div.DavesHeader
+{
+	font-size:16px;
+	font-weight:bold;
+	font-style:italic;
+}
+.FamDay
+{
+	font-size:50px;
+	color:#0000FF;
+	font-family: Times New Roman;
+	font-weight:bold;
+}

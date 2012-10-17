@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="True" CodeBehind="HistoryDefault.Master.cs" Inherits="North22ndStreet.Web.HistoryDefault" %>
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+
+<%@ Register src="../MainMenu.ascx" tagname="MainMenu" tagprefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<link href="AW.css" rel="stylesheet" type="text/css" />
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>History of North 22nd Street -- www.north22ndstreetnphilly.com</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+        </telerik:RadScriptManager>
+       
+    <div class="Outer">
+    <div class="OuterCenter">
+    <div class="Center">
+        <div style="text-align:center;width:905px;background-color:#A50010; color:#FFF; ">
+        <img src="../Images/22ndStreetLogoNEW.jpg" alt="www.north22ndstreetnphilly.com" />
+        </div> 
+        <table id="MainTable" width="900px">
+            <tr>
+                <td align="center">
+                    <asp:ContentPlaceHolder ID="TopAdvertisement" runat="server">                        
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <img src="~/AW/Images/HistoryHeader.jpg" runat="server" 
+                        alt="History of North Philadelphia's Allegheny West Neighborhood" width="900" />
+                </td>  
+            </tr>
+            <tr>
+                <td align="center" style="width:100%; background-color:#006400">  
+           
+                    <uc1:MainMenu ID="MainMenu1" runat="server" />  
+                        
+                </td>
+            </tr>
+        <tr>
+            <td valign="top">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>        
+        </tr>
+        </table>    
+        <div style="text-align:center;width:905px;background-color:#A50010; color:#FFF; ">
+        <img src="../Images/22ndStreetLogoNEW.jpg" alt="www.north22ndstreetnphilly.com" />
+        </div>    
+    </div>    
+    </div>     
+    </div>
+    
+    </form>
+</body>
+</html>

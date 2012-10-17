@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="True" CodeBehind="AdminMaster.master.cs" Inherits="North22Admin.Web.AdminMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/AdminStyles.css" rel="stylesheet" type="text/css" />
+</head>
+<script>
+javascript:window.history.forward(1);
+</script>
+<body>
+    <form id="form1" runat="server">
+    <div class="BodyCenter">
+        <div class="Header"></div>
+        <div class="Content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="Footer">
+            <br /><br /><br /><br /><br /><br />
+            &copy 2009 North 22nd Street Merchants Association</div>
+    </div>
+    </form>
+</body>
+</html>

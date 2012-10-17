@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="News.master.cs" Inherits="North22ndStreet.Web.News" %>
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+
+<%@ Register src="../MainMenu.ascx" tagname="MainMenu" tagprefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<link href="AW.css" rel="stylesheet" type="text/css" />
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Allegheny West News -- www.north22ndstreetnphilly.com</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+        </telerik:RadScriptManager>
+       
+    <div class="Outer">
+    <div class="Header"></div>
+    <div class="OuterCenter">
+    <div class="Center">
+        <table id="MainTable" width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+                <td align="center" style="width:100%; background-color:#B9321D">                    
+                    <uc1:MainMenu ID="MainMenu1" runat="server" />                    
+                </td>
+            </tr>
+            <tr>
+                <td>                
+                    <div class="MainNewsBG topBorder">  
+                      <table width="100%">        
+                        <tr>
+                            <td>
+                                <asp:Image ID="imgNewsHeader" runat="server" ImageUrl="~/AW/Images/AWHeader.gif" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="Header1">
+                                    Serving the Allegheny West Community of North Philadelphia
+                                </div>
+                            </td>
+                        </tr>
+                        </table>
+                    </div>
+                
+                </td>
+            </tr>            
+            <tr>
+                <td valign="top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>        
+            </tr>
+        </table>    
+    </div>
+     </div>  
+     <div class="footer"></div>     
+    </div>
+    
+    </form>
+</body>
+</html>
