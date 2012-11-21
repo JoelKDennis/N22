@@ -18,6 +18,11 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -64,6 +69,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Merchants\TalkingTShirt\TheTalkingTShirt0001.jpg" />
+    <Content Include="Merchants\TalkingTShirt\TTS.ascx" />
     <Content Include="TestEncryption.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -287,6 +294,13 @@
     </Compile>
     <Compile Include="Merchants\StopNSave\StopnSaveUC.ascx.designer.cs">
       <DependentUpon>StopnSaveUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Merchants\TalkingTShirt\TTS.ascx.cs">
+      <DependentUpon>TTS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Merchants\TalkingTShirt\TTS.ascx.designer.cs">
+      <DependentUpon>TTS.ascx</DependentUpon>
     </Compile>
     <Compile Include="Merchants\Tastykake\Tasty.ascx.cs">
       <DependentUpon>Tasty.ascx</DependentUpon>
@@ -605,6 +619,7 @@
     <None Include="Merchants\FemaleFashions\DiscountCard_Spring2010.pdf" />
     <Content Include="Merchants\GCGE\pdfs\Brochure_2010.pdf" />
     <None Include="Merchants\GCGE\pdfs\CarnivalDestiny_GCGE.pdf" />
+    <None Include="Properties\PublishProfiles\N22 Publish.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="22Events\" />

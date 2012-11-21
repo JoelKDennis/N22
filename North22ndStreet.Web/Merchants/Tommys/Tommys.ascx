@@ -9,7 +9,8 @@ Tommy's Men Shop
 <span style="font-size:14px;color:Black;font-weight:bold;">
 Shop Tommy's for All of Your Holiday Needs
 </span><br /><br />
-<span style="color:Green; font-size:30px; font-weight:bold;">
+
+<%--<span style="color:Green; font-size:30px; font-weight:bold;">
 XMAS Special
 </span><br />
 
@@ -54,7 +55,10 @@ onmouseover="this.style.backgroundColor='#A50010';" onmouseout="this.style.backg
         <td style="width:284px"><img width="284px" src="Merchants/Tommys/Socks.jpg" alt="Socks at Tommy's Men Shop" title="Socks at Tommy's Men Shop" /></td>
     </tr>
 </table>
-<br />
+<br />--%>
+    <br />
+    New Advertisement Under Development
+    <br /><br />
 <div style="width:100%;background-color:#A50010;">
     <a href="default.aspx" >
         <img src="Images/22ndStreetLogoNEW.jpg" alt="North 22nd Street in Philadelphia" title="North 22nd Street in Philadelphia" />

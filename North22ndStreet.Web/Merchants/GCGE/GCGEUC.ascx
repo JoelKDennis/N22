@@ -26,7 +26,7 @@ COLOR: #FFF;
     <a href="Merchants/GCGE/pdfs/Brochure_2010.pdf" target="_blank">Click here for New Brochure!</a>
 </div><br />
 
-<table width="100%" cellpadding="0" cellspacing="0">
+<%--<table width="100%" cellpadding="0" cellspacing="0">
     <tr>
         <td colspan="2" align="center">
             <img src="Merchants/GCGE/Couple.jpg" alt="Group Cruises & Great Escapes" title="Group Cruises & Great Escapes" /><br />
@@ -192,10 +192,11 @@ Aruba/Curacao From $669
             MEXICAN RIVIERA<br />PANAMA CANAL<br />SOUTH AMERICA<br />
         </td>
     </tr>
-</table>
+</table>--%>
 
-
-
+    <br />
+    New Advertisement Under Development
+    <br /><br />
 <br />
 <div style="width:100%;background-color:#3232CC;color:#FFF;">
     <a href="http://www.groupcruisesgreatescapes.com" target="_blank">www.GroupCruisesGreatEscapes.com</a>

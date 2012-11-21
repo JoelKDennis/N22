@@ -24,7 +24,7 @@ TASTYKAKE THRIFT OUTLET STORE
         (215) 549 1001       
         </td>
     </tr>
-    <tr>
+   <%-- <tr>
         <td align="center"><img src="Merchants/Tastykake/tasty_snackbars.jpg" width="250" alt="Tastykake Snack Bars" title="Tastykake Snack Bars" /></td>
         <td align="center"><img src="Merchants/Tastykake/tasty_pies.jpg" width="250" alt="Tastykake Pies" title="Tastykake Pies"/></td>
     </tr>
@@ -50,11 +50,14 @@ TASTYKAKE THRIFT OUTLET STORE
     </tr>
     <tr>
         <td colspan="2" align="center"><img src="Merchants/Tastykake/tasty1.jpg" width="580" /></td>
-    </tr>
+    </tr>--%>
 </table><br />
+
 <a href="http://www.awest.org" target="_blank">
 <img src="Merchants/Tastykake/AllegheyWestLogo.jpg" width="100px" alt="Allegheny West Foundation" title="Allegheny West Foundation" />
-</a><br /><br />
+</a><br />
+ New Advertisement Under Development   
+ <br />
 <div style="width:100%;background-color:#A50010;">
     <a href="default.aspx" >
         <img src="Images/22ndStreetLogoNEW.jpg" alt="North 22nd Street in Philadelphia" title="North 22nd Street in Philadelphia" />

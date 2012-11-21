@@ -37,7 +37,7 @@ namespace North22ndStreet.Web
         }
 
         protected void SetLinks()
-        {            
+        {
             lnkAd1.NavigateUrl = "2009Special.aspx?name=" + Merchant.GetBusiness(imgAd1.AlternateText).ID.ToString() + "&level=1";
             lnkAd2.NavigateUrl = "2009Special.aspx?name=" + Merchant.GetBusiness(imgAd2.AlternateText).ID.ToString() + "&level=1";
             lnkAd3.NavigateUrl = "2009Special.aspx?name=" + Merchant.GetBusiness(imgAd3.AlternateText).ID.ToString() + "&level=1";

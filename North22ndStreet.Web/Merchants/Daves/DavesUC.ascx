@@ -2,8 +2,10 @@
 <div style="text-align:center">
 <div style="width:578px;text-align:center;font-family:Trebuchet MS;color:#000;font-size:12px; background-color:#FFF;border:Solid 2px #A50010; padding:2px 2px 2px 2px;margin-left:auto;margin-right:auto;">
 <span style="font-family:Georgia; font-size:30px; font-weight:bold; color:#A50010">
-DAVE’S FRESH MEAT MARKET</span><br />
-<table width="100%">
+DAVE’S FRESH MEAT MARKET</span><br /><br />
+
+    
+<%--<table width="100%">
 <tr>
     <td style="width:50%; border:Solid 4px #BAA25A;text-align:center;vertical-align:top;">
         <b>CHITTERLINGS</b><br />
@@ -130,13 +132,13 @@ DAVE’S FRESH MEAT MARKET</span><br />
            
     </td>
 </tr>
-</table>
+</table>--%>
 <br />
 <div style="width:100%;background-color:#A50010;">
     <a href="default.aspx" >
         <img src="Images/22ndStreetLogoNEW.jpg" alt="North 22nd Street in Philadelphia" title="North 22nd Street in Philadelphia" />
     </a>
 </div>
-
+    <br />New Advertisement Under Development<br /><br />
 </div>
 </div>

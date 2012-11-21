@@ -5,7 +5,8 @@
 <span style="font-size:20px;">2849 N. 22nd St.  &nbsp; &nbsp;    215 225 3075</span>
 <br /><br />
 <span style="color:#397D02;font-weight:bold;">What You Want At a Price You Can Afford!</span><br />
-Free Gift Boxes With All Purchases!<br /><br />
+
+<%--Free Gift Boxes With All Purchases!<br /><br />
 <input style="background-color:#BAA25A;color:#FFF;font-weight:bold;" type="button" 
 value="Click here and Print Special Offer card!!!" onclick="window.open('Merchants/FemaleFashions/DiscountCard_Spring2010.pdf','mywindow','width=640,height=660,resizable=no,toolbar=no,menubar=yes,location=no');"
 onmouseover="this.style.backgroundColor='#A50010';" onmouseout="this.style.backgroundColor='#BAA25A';"/> 
@@ -142,8 +143,10 @@ onmouseover="this.style.backgroundColor='#A50010';" onmouseout="this.style.backg
         <td style="width:50%; text-align:center"><img src="Merchants/FemaleFashions/116_1696.JPG" alt="Fe-Male Fashions" title="Fe-Male Fashions" /><br /><br /></td>
         <td style="width:50%; text-align:center"><img src="Merchants/FemaleFashions/116_1729.JPG" alt="Fe-Male Fashions" title="Fe-Male Fashions" /><br /><br /></td>
     </tr> 
-</table>
-
+</table>--%>
+    <br />
+    New Advertisement Under Development
+    <br /><br /><br />
 <div style="width:100%;background-color:#A50010;">
     <a href="default.aspx" >
         <img src="Images/22ndStreetLogoNEW.jpg" alt="North 22nd Street in Philadelphia" title="North 22nd Street in Philadelphia" />
